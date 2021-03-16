@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e0dddd;
+}
+header{
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(240, 14, 14);
+}
+header>h1 {
+    margin-bottom: 20px;
+}
+nav>ul{
+    margin: 10px;
+    list-style: none;
+}
+nav>ul li{
+    display: inline;
+}
+nav>ul li a{
+    text-decoration: none;
+    padding: 8px 15px; 
+}
+nav>ul li a:link , nav>ul li a:visited{
+    color: white;
+}
+nav>ul li a:hover{
+    color:  rgb(240, 14, 14);
+    background-color: white;
+}
+h1{
+    font-size: 2.8em;
+}
+.branco{
+    color: white;
+}
+main{
+    width: 920px;
+    margin: 0 auto;
+}
+.postagem{
+    background-color: white;
+    /* border: 1px solid red; */
+    margin: 20px 0;
+    padding: 15px;
+}
+.postagem>h2{
+    color: rgb(240, 14, 14);
+}
+.imagem-postagem {
+    width: 420px;
+}
+footer{
+    width: 920px; 
+    margin: 0 auto;
+    background-color: rgb(240, 14, 14);
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+footer>ul{
+    margin: 10px;
+    list-style: none;
+}
+footer>ul li{
+    display: inline;
+}
+footer>ul li a{
+    text-decoration: none;
+    padding: 8px 15px; 
+}
+footer>ul li a:link , footer>ul li a:visited{
+    color: white;
+}
+footer>ul li a:hover{
+    color:  rgb(240, 14, 14);
+    background-color: white;
+}
+
+
+#tipos img{
+    width: 6em;
+    padding: 25px;
+}
+#tipos h2{
+    font-size: 3em;
+    padding: 15px;
+    text-align: center;
+}
+#tipo-balao{
+    width: 660px;
+    margin: 15px auto;
+    margin-bottom: 30px;
+    background-color: rgb(235, 235, 235);
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid silver;
+    display: none;
+}
+#main-tipos{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(59, 59, 59);
+}
+#tipo-balao img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 10em;
+}
+#botao-fechar{
+    float: right;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: rgb(235, 235, 235);
+    border: 2px solid silver;
+    color: silver;
+
+}
+#setinha{
+    width: 3em;
+    height: 3em;
+    display: fixed;
+    float: right;
+    background-color: rgb(235, 235, 235);
+    border: 2px solid silver;
+    margin-right: 5px;
+}
+#setinha a:link,#setinha a:visited{
+    color: silver;
+    text-decoration: none;
+}
