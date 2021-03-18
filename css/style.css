@@ -137,3 +137,208 @@ footer>ul li a:hover{
     color: silver;
     text-decoration: none;
 }
+
+
+/* Pokedex */
+#balao-pokedex {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid blue;
+    background-color: rgb(240, 14, 14 , 0.7);
+    border-radius: 10px;
+    display: none;
+}
+#balao-pokedex>h2 {
+    text-align: center;
+}
+#balao-pokedex>img {
+    width: 200px;
+    float: left;
+    margin-left: 270px;
+}
+
+#stats{
+    list-style: none;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.671);
+    padding: 15px;
+}
+.fundo-basico{
+    background-color:rgb(235, 235, 235);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+#bug{
+    background-color: rgb(23, 99, 23);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#dark{
+    background-color:black;
+    padding: 5px;
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-right: 10px;
+    text-align: center;
+}
+#dragon{
+    background-color: rgb(1, 149, 194);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#electric{
+    background-color: rgb(247, 247, 75);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#fairy{
+    background-color:rgb(252, 106, 155);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#fighting{
+    background-color: rgb(204, 68, 14);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#fire{
+    background-color: rgb(228, 95, 6);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#flying{
+    background-color: rgb(127, 186, 221);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#ghost{
+    background-color: rgb(83, 5, 83);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#grass{
+    background-color: rgb(8, 170, 8);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#ground{
+    background-color: rgb(134, 87, 33);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#ice{
+    background-color: rgb(7, 178, 221);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#normal{
+    background-color: rgb(212, 135, 104);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#poison{
+    background-color:purple;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#psychic{
+    background-color: rgb(207, 24, 198);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#rock{
+    background-color: rgb(90, 62, 31);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#steel{
+    background-color:rgb(133, 130, 130);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+#water{
+    background-color: rgb(86, 86, 248);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+#fechar-pokedex{
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1.5px solid blue;
+    background-color: rgba(160, 4, 4, 0.589);
+}
+#pesquisa{
+    width: 90%;
+    margin: 20px 200px;
+}
+#input-pokemon{
+    width: 420px;
+    height: 20px;
+}
+#botao-pesquisar{
+    padding: 5px;
+}
