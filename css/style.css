@@ -342,3 +342,27 @@ footer>ul li a:hover{
 #botao-pesquisar{
     padding: 5px;
 }
+
+#lista-pokedex>ul{
+    list-style: none;
+    display: inline-block;
+}
+#lista-pokedex>ul li{ 
+    float: left;
+    width: 200px;
+    height: 220px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: white;
+}
+#lista-imagem{
+    width: 140px;
+}
+#carregar{
+    display: block;
+    margin: 15px auto;
+    padding: 5px;
+}

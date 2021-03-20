@@ -1,7 +1,59 @@
+// Lista Pokemon
+// Esta função esta bugada assim a lista esta ficando fora de ordem
+
+let $botaoCarregar = $("#carregar");
+$botaoCarregar.click(botaoAdicionar)
+let numeroInicial = 0;
+function botaoAdicionar(){
+    numeroInicial += 12;
+    $.ajax({
+        url: `https://pokeapi.co/api/v2/pokemon?limit=12&offset=${numeroInicial}`,
+        dataType: 'json',
+        success: adicionarPokedex
+      });
+}
+$.ajax({
+    url: 'https://pokeapi.co/api/v2/pokemon?limit=12&offset=0',
+    dataType: 'json',
+    success: adicionarPokedex
+  });
+function adicionarPokedex(e){
+    let pokemons = e.results;
+    let lisPokemon = [];
+    for (const pokemon of pokemons) {
+        $.ajax({
+            url: `${pokemon.url}`,
+            dataType: 'json',
+            success: function(resposta) {
+                let $listaPokedexUl = $("#lista-pokedex>ul");
+                let types = [];
+                for (const tipo of resposta.types) {
+                types.push(`<td id="${tipo.type.name}">${tipo.type.name}</td>`);
+            }
+                $(`<li class="elemento-lista" data-id="${resposta.id}">
+                <img id="lista-imagem" src="https://pokeres.bastionbot.org/images/pokemon/${resposta.id}.png">
+                <span id="lista-id">#${("000" + resposta.id).slice(-3)}</span>
+                <h2>${resposta.name}</h2>
+                <table>
+                ${types.toString().replace(",","")}
+                </table>
+                </li>`).appendTo($listaPokedexUl);
+            }
+          });
+    }
+}
+
+// Pesquisa o Pokemon
+
 let $inputPokemon = $("#input-pokemon");
 let $botaoPesquisar = $("#botao-pesquisar");
 $botaoPesquisar.click(pesquisarPokemon);
-
+$inputPokemon.keyup(verificarEnter);
+function verificarEnter(e){
+    if(e.key === "Enter"){
+        pesquisarPokemon();
+      }
+}
 function pesquisarPokemon(e) {
     let $inputPokemon = $("#input-pokemon");
     let pokemon = $inputPokemon.val();
