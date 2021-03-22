@@ -29,7 +29,7 @@ function fetchPokemonlista(numeroInicial, numeroFinal) {
                 <li class="elemento-lista">
                 <img class="lista-imagem" src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png">
                 <span class="lista-id">#${("000" + pokemon.id).slice(-3)}</span>
-                <h2>${pokemon.name}</h2>
+                <h2 class="capitalized">${pokemon.name}</h2>
                 <table>
                 ${types.toString().replace(",","")}
                 </table>
@@ -62,7 +62,7 @@ function pesquisarPokemon(e) {
             let $balaoPokedex = $("#balao-pokedex");
             $balaoPokedex.html('');
             $(`<button id="fechar-pokedex">x</button>`).appendTo($balaoPokedex);
-            $(`<h2>${resposta.name} <span id="pokemon-id">#${("000" + resposta.id).slice(-3)}</span></h2>`).appendTo($balaoPokedex);
+            $(`<h2 class="capitalized">${resposta.name} <span id="pokemon-id">#${("000" + resposta.id).slice(-3)}</span></h2>`).appendTo($balaoPokedex);
             $(`<img src="https://pokeres.bastionbot.org/images/pokemon/${resposta.id}.png">`).appendTo($balaoPokedex);
             $(`<ul id="stats"></ul>`).appendTo($balaoPokedex);
             let $stats = $("#stats");

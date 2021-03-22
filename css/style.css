@@ -157,7 +157,9 @@ footer>ul li a:hover{
     float: left;
     margin-left: 270px;
 }
-
+#pokemon-id{
+    color: rgba(83, 76, 76, 0.699);
+}
 #stats{
     list-style: none;
     float: left;
@@ -365,4 +367,7 @@ footer>ul li a:hover{
     display: block;
     margin: 15px auto;
     padding: 5px;
+}
+.capitalized {
+	text-transform: capitalize;
 }
