@@ -1,48 +1,46 @@
 // Lista Pokemon
-// Esta função esta bugada assim a lista esta ficando fora de ordem
 
 let $botaoCarregar = $("#carregar");
 $botaoCarregar.click(botaoAdicionar)
-let numeroInicial = 0;
+let numeroInicial = 1;
+let numeroFinal = 12;
 function botaoAdicionar(){
     numeroInicial += 12;
-    $.ajax({
-        url: `https://pokeapi.co/api/v2/pokemon?limit=12&offset=${numeroInicial}`,
-        dataType: 'json',
-        success: adicionarPokedex
-      });
+    numeroFinal += 12;
+    fetchPokemonlista(numeroInicial,numeroFinal)
 }
-$.ajax({
-    url: 'https://pokeapi.co/api/v2/pokemon?limit=12&offset=0',
-    dataType: 'json',
-    success: adicionarPokedex
-  });
-function adicionarPokedex(e){
-    let pokemons = e.results;
-    let lisPokemon = [];
-    for (const pokemon of pokemons) {
-        $.ajax({
-            url: `${pokemon.url}`,
-            dataType: 'json',
-            success: function(resposta) {
-                let $listaPokedexUl = $("#lista-pokedex>ul");
+const getPokemonurl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
+
+fetchPokemonlista(numeroInicial,numeroFinal)
+function fetchPokemonlista(numeroInicial, numeroFinal) {
+    const pokemonPromises = []
+
+    for (let i = numeroInicial; i <= numeroFinal; i++) {
+        pokemonPromises.push(fetch(getPokemonurl(i)).then(response => response.json()))
+    }
+    Promise.all(pokemonPromises)
+        .then(pokemons => {
+            const lisPokemons = pokemons.reduce((accumulator, pokemon) => {
                 let types = [];
-                for (const tipo of resposta.types) {
-                types.push(`<td id="${tipo.type.name}">${tipo.type.name}</td>`);
+                for (const tipo of pokemon.types) {
+                types.push(`<td class="${tipo.type.name}">${tipo.type.name}</td>`);
             }
-                $(`<li class="elemento-lista" data-id="${resposta.id}">
-                <img id="lista-imagem" src="https://pokeres.bastionbot.org/images/pokemon/${resposta.id}.png">
-                <span id="lista-id">#${("000" + resposta.id).slice(-3)}</span>
-                <h2>${resposta.name}</h2>
+                accumulator += `
+                <li class="elemento-lista">
+                <img class="lista-imagem" src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png">
+                <span class="lista-id">#${("000" + pokemon.id).slice(-3)}</span>
+                <h2>${pokemon.name}</h2>
                 <table>
                 ${types.toString().replace(",","")}
                 </table>
-                </li>`).appendTo($listaPokedexUl);
-            }
-          });
-    }
-}
+                </li>`
+                return accumulator
+            }, "")
 
+            const ul = document.querySelector('#lista-pokedex>ul')
+            ul.innerHTML += lisPokemons
+        })
+}
 // Pesquisa o Pokemon
 
 let $inputPokemon = $("#input-pokemon");
@@ -77,7 +75,7 @@ function pesquisarPokemon(e) {
             $(`<tr id="types"></tr>`).appendTo($balaoPokedex);
             let $types = $('#types');
             for (const tipo of resposta.types) {
-                $(`<td id="${tipo.type.name}">${tipo.type.name}</td>`).appendTo($types);
+                $(`<td class="${tipo.type.name}">${tipo.type.name}</td>`).appendTo($types);
             }
             $(`<table></table>`).appendTo($balaoPokedex);
             $("<tr><td>Caracteristicas:</td></tr>").appendTo($balaoPokedex);

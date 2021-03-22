@@ -175,7 +175,7 @@ footer>ul li a:hover{
     border: 1px solid black;
     text-align: center;
 }
-#bug{
+.bug{
     background-color: rgb(23, 99, 23);
     padding: 5px;
     border-radius: 5px;
@@ -183,7 +183,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#dark{
+.dark{
     background-color:black;
     padding: 5px;
     color: grey;
@@ -192,7 +192,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#dragon{
+.dragon{
     background-color: rgb(1, 149, 194);
     padding: 5px;
     border-radius: 5px;
@@ -200,7 +200,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#electric{
+.electric{
     background-color: rgb(247, 247, 75);
     padding: 5px;
     border-radius: 5px;
@@ -208,7 +208,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#fairy{
+.fairy{
     background-color:rgb(252, 106, 155);
     padding: 5px;
     border-radius: 5px;
@@ -216,7 +216,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#fighting{
+.fighting{
     background-color: rgb(204, 68, 14);
     padding: 5px;
     border-radius: 5px;
@@ -224,7 +224,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#fire{
+.fire{
     background-color: rgb(228, 95, 6);
     padding: 5px;
     border-radius: 5px;
@@ -232,7 +232,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#flying{
+.flying{
     background-color: rgb(127, 186, 221);
     padding: 5px;
     border-radius: 5px;
@@ -240,7 +240,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#ghost{
+.ghost{
     background-color: rgb(83, 5, 83);
     padding: 5px;
     border-radius: 5px;
@@ -248,7 +248,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#grass{
+.grass{
     background-color: rgb(8, 170, 8);
     padding: 5px;
     border-radius: 5px;
@@ -256,7 +256,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#ground{
+.ground{
     background-color: rgb(134, 87, 33);
     padding: 5px;
     border-radius: 5px;
@@ -264,7 +264,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#ice{
+.ice{
     background-color: rgb(7, 178, 221);
     padding: 5px;
     border-radius: 5px;
@@ -272,7 +272,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#normal{
+.normal{
     background-color: rgb(212, 135, 104);
     padding: 5px;
     border-radius: 5px;
@@ -280,7 +280,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#poison{
+.poison{
     background-color:purple;
     padding: 5px;
     border-radius: 5px;
@@ -288,7 +288,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#psychic{
+.psychic{
     background-color: rgb(207, 24, 198);
     padding: 5px;
     border-radius: 5px;
@@ -296,7 +296,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#rock{
+.rock{
     background-color: rgb(90, 62, 31);
     padding: 5px;
     border-radius: 5px;
@@ -304,7 +304,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#steel{
+.steel{
     background-color:rgb(133, 130, 130);
     padding: 5px;
     border-radius: 5px;
@@ -312,7 +312,7 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-#water{
+.water{
     background-color: rgb(86, 86, 248);
     padding: 5px;
     border-radius: 5px;
@@ -358,7 +358,7 @@ footer>ul li a:hover{
     margin-left: 5px;
     background-color: white;
 }
-#lista-imagem{
+.lista-imagem{
     width: 140px;
 }
 #carregar{
