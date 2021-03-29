@@ -1,98 +1,122 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #e0dddd;
 }
-header{
+
+header {
     text-align: center;
     padding: 15px;
     background-color: rgb(240, 14, 14);
 }
+
 header>h1 {
     margin-bottom: 20px;
 }
-nav>ul{
+
+nav>ul {
     margin: 10px;
     list-style: none;
 }
-nav>ul li{
+
+nav>ul li {
     display: inline;
 }
-nav>ul li a{
+
+nav>ul li a {
     text-decoration: none;
-    padding: 8px 15px; 
+    padding: 8px 15px;
 }
-nav>ul li a:link , nav>ul li a:visited{
+
+nav>ul li a:link,
+nav>ul li a:visited {
     color: white;
 }
-nav>ul li a:hover{
-    color:  rgb(240, 14, 14);
+
+nav>ul li a:hover {
+    color: rgb(240, 14, 14);
     background-color: white;
 }
-h1{
+
+h1 {
     font-size: 2.8em;
 }
-.branco{
+
+.branco {
     color: white;
 }
-main{
+
+main {
     width: 920px;
     margin: 0 auto;
 }
-.postagem{
+
+.postagem {
     background-color: white;
     /* border: 1px solid red; */
     margin: 20px 0;
     padding: 15px;
 }
-.postagem>h2{
+
+.postagem>h2 {
     color: rgb(240, 14, 14);
 }
+
 .imagem-postagem {
     width: 420px;
 }
-footer{
-    width: 920px; 
+
+footer {
+    width: 920px;
     margin: 0 auto;
     background-color: rgb(240, 14, 14);
     padding: 5px;
     text-align: center;
     margin-bottom: 5px;
 }
-footer>ul{
+
+footer>ul {
     margin: 10px;
     list-style: none;
 }
-footer>ul li{
+
+footer>ul li {
     display: inline;
 }
-footer>ul li a{
+
+footer>ul li a {
     text-decoration: none;
-    padding: 8px 15px; 
+    padding: 8px 15px;
 }
-footer>ul li a:link , footer>ul li a:visited{
+
+footer>ul li a:link,
+footer>ul li a:visited {
     color: white;
 }
-footer>ul li a:hover{
-    color:  rgb(240, 14, 14);
+
+footer>ul li a:hover {
+    color: rgb(240, 14, 14);
     background-color: white;
 }
 
 
-#tipos img{
+#tipos img {
     width: 6em;
     padding: 25px;
 }
-#tipos h2{
+
+#tipos h2 {
     font-size: 3em;
     padding: 15px;
     text-align: center;
 }
-#tipo-balao{
+
+#tipo-balao {
     width: 660px;
     margin: 15px auto;
     margin-bottom: 30px;
@@ -102,19 +126,22 @@ footer>ul li a:hover{
     border: 2px solid silver;
     display: none;
 }
-#main-tipos{
+
+#main-tipos {
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
     border: 2px solid rgb(59, 59, 59);
 }
-#tipo-balao img{
+
+#tipo-balao img {
     display: block;
     margin: 0 auto;
     margin-bottom: 5px;
     width: 10em;
 }
-#botao-fechar{
+
+#botao-fechar {
     float: right;
     border-radius: 50%;
     width: 1.5em;
@@ -124,7 +151,8 @@ footer>ul li a:hover{
     color: silver;
 
 }
-#setinha{
+
+#setinha {
     width: 3em;
     height: 3em;
     display: fixed;
@@ -133,7 +161,9 @@ footer>ul li a:hover{
     border: 2px solid silver;
     margin-right: 5px;
 }
-#setinha a:link,#setinha a:visited{
+
+#setinha a:link,
+#setinha a:visited {
     color: silver;
     text-decoration: none;
 }
@@ -145,22 +175,26 @@ footer>ul li a:hover{
     margin: 20px auto;
     padding: 15px;
     border: 1px solid blue;
-    background-color: rgb(240, 14, 14 , 0.7);
+    background-color: rgb(240, 14, 14, 0.7);
     border-radius: 10px;
     display: none;
 }
+
 #balao-pokedex>h2 {
     text-align: center;
 }
+
 #balao-pokedex>img {
     width: 200px;
     float: left;
     margin-left: 270px;
 }
-#pokemon-id{
+
+#pokemon-id {
     color: rgba(83, 76, 76, 0.699);
 }
-#stats{
+
+#stats {
     list-style: none;
     float: left;
     margin-top: 30px;
@@ -170,14 +204,16 @@ footer>ul li a:hover{
     background-color: rgba(0, 255, 255, 0.671);
     padding: 15px;
 }
-.fundo-basico{
-    background-color:rgb(235, 235, 235);
+
+.fundo-basico {
+    background-color: rgb(235, 235, 235);
     padding: 5px;
     border-radius: 5px;
     border: 1px solid black;
     text-align: center;
 }
-.bug{
+
+.bug {
     background-color: rgb(23, 99, 23);
     padding: 5px;
     border-radius: 5px;
@@ -185,8 +221,9 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.dark{
-    background-color:black;
+
+.dark {
+    background-color: black;
     padding: 5px;
     color: grey;
     border-radius: 5px;
@@ -194,7 +231,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.dragon{
+
+.dragon {
     background-color: rgb(1, 149, 194);
     padding: 5px;
     border-radius: 5px;
@@ -202,7 +240,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.electric{
+
+.electric {
     background-color: rgb(247, 247, 75);
     padding: 5px;
     border-radius: 5px;
@@ -210,15 +249,17 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.fairy{
-    background-color:rgb(252, 106, 155);
+
+.fairy {
+    background-color: rgb(252, 106, 155);
     padding: 5px;
     border-radius: 5px;
     border: 1px solid black;
     margin-right: 10px;
     text-align: center;
 }
-.fighting{
+
+.fighting {
     background-color: rgb(204, 68, 14);
     padding: 5px;
     border-radius: 5px;
@@ -226,7 +267,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.fire{
+
+.fire {
     background-color: rgb(228, 95, 6);
     padding: 5px;
     border-radius: 5px;
@@ -234,7 +276,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.flying{
+
+.flying {
     background-color: rgb(127, 186, 221);
     padding: 5px;
     border-radius: 5px;
@@ -242,7 +285,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.ghost{
+
+.ghost {
     background-color: rgb(83, 5, 83);
     padding: 5px;
     border-radius: 5px;
@@ -250,7 +294,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.grass{
+
+.grass {
     background-color: rgb(8, 170, 8);
     padding: 5px;
     border-radius: 5px;
@@ -258,7 +303,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.ground{
+
+.ground {
     background-color: rgb(134, 87, 33);
     padding: 5px;
     border-radius: 5px;
@@ -266,7 +312,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.ice{
+
+.ice {
     background-color: rgb(7, 178, 221);
     padding: 5px;
     border-radius: 5px;
@@ -274,7 +321,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.normal{
+
+.normal {
     background-color: rgb(212, 135, 104);
     padding: 5px;
     border-radius: 5px;
@@ -282,15 +330,17 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.poison{
-    background-color:purple;
+
+.poison {
+    background-color: purple;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid black;
     margin-right: 10px;
     text-align: center;
 }
-.psychic{
+
+.psychic {
     background-color: rgb(207, 24, 198);
     padding: 5px;
     border-radius: 5px;
@@ -298,7 +348,8 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.rock{
+
+.rock {
     background-color: rgb(90, 62, 31);
     padding: 5px;
     border-radius: 5px;
@@ -306,15 +357,17 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.steel{
-    background-color:rgb(133, 130, 130);
+
+.steel {
+    background-color: rgb(133, 130, 130);
     padding: 5px;
     border-radius: 5px;
     border: 1px solid black;
     margin-right: 10px;
     text-align: center;
 }
-.water{
+
+.water {
     background-color: rgb(86, 86, 248);
     padding: 5px;
     border-radius: 5px;
@@ -322,10 +375,12 @@ footer>ul li a:hover{
     margin-right: 10px;
     text-align: center;
 }
-.clear{
+
+.clear {
     clear: both;
 }
-#fechar-pokedex{
+
+#fechar-pokedex {
     float: right;
     width: 25px;
     height: 25px;
@@ -333,23 +388,27 @@ footer>ul li a:hover{
     border: 1.5px solid blue;
     background-color: rgba(160, 4, 4, 0.589);
 }
-#pesquisa{
+
+#pesquisa {
     width: 90%;
     margin: 20px 200px;
 }
-#input-pokemon{
+
+#input-pokemon {
     width: 420px;
     height: 20px;
 }
-#botao-pesquisar{
+
+#botao-pesquisar {
     padding: 5px;
 }
 
-#lista-pokedex>ul{
+#lista-pokedex>ul {
     list-style: none;
     display: inline-block;
 }
-#lista-pokedex>ul li{ 
+
+#lista-pokedex>ul li {
     float: left;
     width: 200px;
     height: 220px;
@@ -360,14 +419,60 @@ footer>ul li a:hover{
     margin-left: 5px;
     background-color: white;
 }
-.lista-imagem{
+
+.lista-imagem {
     width: 140px;
 }
-#carregar{
+
+#carregar {
     display: block;
     margin: 15px auto;
     padding: 5px;
 }
+
 .capitalized {
-	text-transform: capitalize;
+    text-transform: capitalize;
+}
+
+/* creditos */
+#creditos {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#creditos-conteudo{
+    background-color: #fefefe;
+  margin: 5% auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 5px;
+}
+#fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #fechar:hover,
+  #fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+#creditos-conteudo img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 20px auto;
+
 }
