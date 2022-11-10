@@ -63,7 +63,7 @@ function pesquisarPokemon(e) {
             $balaoPokedex.html('');
             $(`<button id="fechar-pokedex">x</button>`).appendTo($balaoPokedex);
             $(`<h2 class="capitalized">${resposta.name} <span id="pokemon-id">#${("000" + resposta.id).slice(-3)}</span></h2>`).appendTo($balaoPokedex);
-            $(`<img src="https://pokeres.bastionbot.org/images/pokemon/${resposta.id}.png">`).appendTo($balaoPokedex);
+            $(`<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${resposta.id}.png">`).appendTo($balaoPokedex);
             $(`<ul id="stats"></ul>`).appendTo($balaoPokedex);
             let $stats = $("#stats");
             $("<li>Status:</li>").appendTo($stats);
