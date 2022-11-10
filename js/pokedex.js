@@ -27,7 +27,7 @@ function fetchPokemonlista(numeroInicial, numeroFinal) {
             }
                 accumulator += `
                 <li class="elemento-lista">
-                <img class="lista-imagem" src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png">
+                <img class="lista-imagem" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png">
                 <span class="lista-id">#${("000" + pokemon.id).slice(-3)}</span>
                 <h2 class="capitalized">${pokemon.name}</h2>
                 <table>
